@@ -1,0 +1,50 @@
+.navbar{
+    background-color: rgb(71, 136, 221);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar > ul{
+    display: flex;
+    gap: 2.5rem;
+    padding: .5rem 1.25rem;
+    margin: 0 auto;
+    width: min-content;
+    text-align: center;
+}
+
+.link {
+    color: white;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.desktop {
+    display: none;
+}
+
+.mobile {
+    display: block;
+}
+
+@media screen and (min-width: 768px){
+    .desktop {
+        display: block;
+    }
+
+    .navbar > ul{
+        display: flex;
+        gap: 1rem;
+        padding: 1.25rem;
+        margin: 0;
+        width: auto;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
